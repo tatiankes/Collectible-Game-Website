@@ -1,0 +1,296 @@
+
+/* Слайдер */
+
+  .slider__container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 870px;
+  }
+  .slider__container .slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all ease 1s;
+    box-shadow: inset 0px 30px 40px #000000, inset 0px -30px 40px #000000;
+   
+  }
+  .lider{
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    width: 602px;
+    height: 420px;
+    border: #00000081 3px solid;
+  } 
+  .hit{
+   position: absolute;
+  right :40%;
+   top:45%; 
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+  .lider a{
+    position: absolute;
+    bottom: 26px;
+    right: 42px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+ 
+  .lider a:hover{
+    filter: drop-shadow(0 0 11px rgba(255, 0, 0));
+    transform: scale(1.1);
+  }
+  .rub{
+    position: absolute;
+    bottom: 26px;
+    left: 42px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .slider-img{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 30px 43px #000000, inset 0px -30px 43px #000000;
+  }
+/*Стрелки*/
+  .slider__control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .slider__control-item {
+    border: solid #fff;
+    border-width: 0 5px 5px 0;
+    padding: 15px;
+  }
+  
+  .slider__control-item:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+  
+  .next {
+    margin-right: 25px;
+    transform: rotate(-45deg);
+  }
+  
+  .prev {
+    margin-left: 25px;
+    transform: rotate(135deg);
+  }
+/*Точки*/
+  .slider__dots {
+    width: 100%;
+    position: absolute;
+    align-self: flex-end;
+    display: inline-flex;
+    justify-content: center;
+    bottom: 0;
+  }
+  
+  .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin: 25px 10px;
+  }
+  
+  .slider__dots-item:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+  
+  .slider__dots-item.active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Исчезание */
+  .slider__container .content.fade-off {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 100%;
+    transition: all 1s ease;
+  }
+  
+  .slider__container .slider-item.fade-off {
+    position: static;
+  }
+/*основа*/
+  main{
+    margin: 20px ;
+  }
+  .p1{
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+  }
+  .p2{
+    font-size: 48px;
+    text-align: center;
+    margin: 3% auto 0 auto;
+    position: relative;padding: 30px 0 8px;
+    width: 300px;
+  }
+  .p2::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 10px;
+    width: 250px;
+    height: 14px;
+    transform: skew(-12deg) ;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.432);
+    z-index: -1;
+  }
+  .nashv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-child{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }
+  .ssnv{
+    margin: 2%;
+  }
+  .nashv a:hover{
+    transform: scale(0.99);
+    opacity: 0.7;
+    
+  }
+/*карусель*/  
+  .marquee {
+    margin: 10% auto;
+        --marquee-width: 80vw;
+    --marquee-height: 20vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+    height: 100vh;
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    color: #eee;
+    overflow: hidden;
+    position: relative;}
+
+  .cap2{
+    position: absolute; 
+    z-index: -1;
+    transform: scale(0.9);  
+    top: 900px;  
+    opacity: 0.5;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+  
+  :root {
+    --marquee-width: 80vw;
+    --marquee-height: 20vh;
+    --marquee-elements: 10; 
+    --marquee-elements-displayed: 3;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  
+  .marquee {
+    height: 20%;
+    background-color: #111;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+  }
+  .marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+  }
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+ .marquee-content:hover {
+    animation-play-state: paused;
+  } 
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  }
+  .marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center; 
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+    white-space: nowrap;
+    padding: 2%;
+  }
+  
+  .marquee-content li img {
+    width: 100%;
+    
+    
+  }
+  
+  @media (max-width: 600px) {
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 16vh;
+      --marquee-elements-displayed: 3;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+  }

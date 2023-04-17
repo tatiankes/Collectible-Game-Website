@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+ 
+        $(function() { 
+        $(window).scroll(function() {       
+        if($(this).scrollTop() != 0) {      
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();   
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+        });
+         
+        </script>
+    <title>Tiger&Snail</title>
+</head>
+<body style="background-color: #000000;">
+<!--header-->
+    <header>
+        <a class="hlogo"href="index.html"><img src="images/logo.png" alt="логотип"></a>
+        <ul id="menu">
+            <li><a href="index.html">главная</a></li>
+            <li><a href="company.html">о нас</a></li>
+            <li><a href="new.html">новости</a></li>
+            <li><a href="catalog.html">продукция</a></li>
+        </ul>
+    
+    <!--search-->
+        <img class="snail" src="images/whitesnail.png" alt="">
+        <form role="search" id="form">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
+      
+    </header>
+    <main>
+        <img src="" alt="">
+        <h1>FARCRY V</h1>
+        <div class="ts">
+        <div class="slider__container">
+            <div class="content">
+                <div class="slider-item" style="background:url(images/hit2.png) 100% no-repeat; background-size: cover;">    
+                </div>
+                <div class="slider-item" style="background:url(images/fon2.png) 100% no-repeat; background-size: cover;">
+                </div>
+            </div>
+            <div class="slider__control">
+                <div class="slider__control-item prev"></div>
+                <div class="slider__control-item next"></div>
+              </div>
+        </div>
+        <script>
+            new Slider(0, { autoPlay: true, fade: true })
+          </script>
+          <div>
+            <p style="font-weight: bold;">Цена - 2900 рублей</p>
+            <p>Состав издания: </p>
+            <ul>
+              <li>Артбук</li>
+              <li>5 литографий</li>
+              <li>Флешка</li>
+              <li>Модель здания плантации Бейкеров</li>
+              <li>Дополнение</li>
+              <li>И другое</li>
+          </ul></div>
+          </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-TajHsKPG-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+        <img class="cap2" src="images/carapina2.png" alt="">
+    <footer>
+        <a class="hlogo"href="index.html"><img src="images/logo.png" alt="логотип"></a> 
+        <img src="images/whitesnail.png" alt="">
+        <ul id="menu2">
+            <li><a href="podbor.html">ПОДБОРКИ</a></li>     
+            <li><a href="new.html">НОВОСТИ</a></li> 
+            <li><a href="company.html">О КОМПАНИИ</a></li> 
+            <li><a href="company.html#contact">КОНТАКТЫ</a></li> 
+        </ul>
+        <ul id="menu3">
+            <li><a href=""><img src="images/vk.png" alt=""></a></li> 
+            <li><a href="https://t.me/tatiankes"><img src="images/tg.png" alt=""></a></li> 
+            <li><a href="https://discord.gg/AAqrSNf8MP"><img src="images/dis.png" alt=""></a></li>
+        </ul>
+        <img class="cap" src="images/carapina.png" alt="">     
+    </footer>
+    <img ID = "toTop"  src="images/up.png" alt="">
+</body>
+</html>

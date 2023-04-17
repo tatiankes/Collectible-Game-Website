@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p,a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+/*header*/
+  header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hlogo{
+    padding: 1% 1% 1% 7%;
+    height: auto;
+    width: 10%;
+  }
+  .hlogo:hover {
+    filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.5));
+    transform: scale(1.05);
+  }
+  #menu {
+    padding:1% ;
+    margin-left: auto;
+    
+
+  }
+  #menu li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  #menu a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    line-height: 40px;
+  }
+  #menu a:hover {
+    filter: drop-shadow(0 0 11px rgba(255, 0, 0));
+    transform: scale(1.1);
+  }
+  #menu li:last-child {
+    margin-right: 0;
+  }
+/*улитка*/
+  .snail{
+    position:absolute;
+    height:50px;
+    animation-name: snail;
+    animation-duration: 50s;
+    animation-iteration-count: 100;
+    animation-timing-function: linear;
+
+
+  }
+  @keyframes snail {
+    0%   {right:21%; top:0px;}
+    100% {right: 7%; top:0px;}
+}
+/*search*/
+  form {
+  margin: 2% 7% 2% 1%;
+    background-color: #ffffff23;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }

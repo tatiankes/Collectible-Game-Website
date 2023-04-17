@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+ 
+        $(function() { 
+        $(window).scroll(function() {       
+        if($(this).scrollTop() != 0) {      
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();   
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+        });
+         
+        </script>
+    <title>Tiger&Snail</title>
+</head>
+<body style="background-color: #000000;">
+<!--header-->
+    <header>
+        <a class="hlogo"href="index.html"><img src="images/logo.png" alt="логотип"></a>
+        <ul id="menu">
+            <li><a href="index.html">главная</a></li>
+            <li><a href="company.html">о нас</a></li>
+            <li><a href="new.html">новости</a></li>
+            <li><a href="catalog.html">продукция</a></li>
+        </ul>
+    
+    <!--search-->
+        <img class="snail" src="images/whitesnail.png" alt="">
+        <form role="search" id="form">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
+      
+    </header>
+    <main class="tabs" >
+        <ul id="menu4">
+            <a href="new.html" ><li>НОВОСТИ</li></a>
+            <a href="podbor.html"style="border: 3px outset rgba(255, 0, 0, 0.356);"><li>ПОДБОРКИ</li></a>
+        </ul>
+                <div class="novosti">
+                    <a href="podbor1.html" class="container" style="background:URL(images/pod1.png) ;"><p>Когда одной игры недостаточно. Самые необычные коллекционные издания видеоигр</p></a>
+                    <a href="podbor2.html" class="container" style="background:URL(images/pod2.png) ;"><p>15 игровых коллекционных изданий, которые можно подарить геймеру</p></a>
+                    <a href="podbor3.html" class="container" style="background:URL(images/pod3.png) ;"><p>Самые дорогие коллекционные издания игр в истории</p></a>
+                    
+                </div>
+                <img class="cap2" src="images/carapina2.png" alt=""> 
+    </main>
+
+    <footer>
+        <img class="hlogo" src="images/logo.png" alt=""> 
+        <img src="images/whitesnail.png" alt="">
+        <ul id="menu2">
+            <li><a href="podbor.html">ПОДБОРКИ</a></li>     
+            <li><a href="new.html">НОВОСТИ</a></li> 
+            <li><a href="company.html">О КОМПАНИИ</a></li> 
+            <li><a href="company.html#contact">КОНТАКТЫ</a></li> 
+        </ul>
+        <ul id="menu3">
+            <li><a href=""><img src="images/vk.png" alt=""></a></li> 
+            <li><a href="https://t.me/tatiankes"><img src="images/tg.png" alt=""></a></li> 
+            <li><a href=""><img src="images/yout.png" alt=""></a></li>
+        </ul>
+        <img class="cap" src="images/carapina.png" alt="">     
+    </footer>
+    <img ID = "toTop"  src="images/up.png" alt="">
+</body>
+</html>

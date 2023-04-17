@@ -1,0 +1,64 @@
+
+  .prod{
+    font-size: 48px;
+    text-align: center;
+    margin: 3% auto 0 auto;
+    position: relative;padding: 30px 0 8px;
+    width: 300px;
+  }
+  .prod::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 10px;
+    width: 250px;
+    height: 14px;
+    transform: skew(-12deg) ;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.432);
+    z-index: -1;
+  }
+.blok{
+    display: flex;
+    margin: 7% 7%;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+.container{
+    width: 455px;
+    height: 305px;
+    margin: 2%;
+    text-align: center;
+    position: relative; 
+    opacity: 0.8;
+    background-color: black;
+}
+.container p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    width: 85%;
+    
+}
+.blok a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px  red ;
+    transition: 1s;
+    opacity: 1;
+}
+.content{ /* Скрываем сразу контент */
+    display: none;}
+    .wrapper a:hover ~ .content{ /* При наведении на ссылку в раппере, откроется контент */
+        display: block;
+      }
+      .cap2{
+        position: absolute; 
+        z-index: -1;
+        transform: scale(0.9);  
+        top: 15%;  
+        opacity: 0.5;
+        width: 100%;
+      }

@@ -1,0 +1,71 @@
+
+.novosti{
+    display: flex;
+    margin: 0 7%;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+.container{
+    width: 545px;
+    height: 355px;
+    margin: 2%;
+    text-align: center;
+    position: relative; 
+    opacity: 0.8;
+    background-color: black;
+}
+.container p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    width: 85%;
+    
+}
+.novosti a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px  red ;
+    transition: 1s;
+    opacity: 1;
+}
+#menu4 {
+    padding:1% ;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    
+
+  }
+  #menu4 li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  #menu4 a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    line-height: 40px;
+    margin: 5% 2% 0 2%;
+    font-size: 32px;
+    padding: 3px;
+  }
+
+  #menu4 a:hover {
+    filter: drop-shadow(0 0 11px rgba(255, 0, 0));
+    transform: scale(1.1);
+  }
+  #menu4 li:last-child {
+    margin-right: 0;
+  }
+  .cap2{
+    position: absolute; 
+    z-index: -1;
+    transform: scale(0.9);  
+    top: 10%;  
+    opacity: 0.5;
+    width: 100%;
+  }

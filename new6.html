@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
+    <link rel="stylesheet" href="css/novost.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+ 
+        $(function() { 
+        $(window).scroll(function() {       
+        if($(this).scrollTop() != 0) {      
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();   
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+        });
+         
+        </script>
+    <title>Tiger&Snail</title>
+</head>
+<body style="background-color: #000000;">
+<!--header-->
+    <header>
+        <a class="hlogo"href="index.html"><img src="images/logo.png" alt="логотип"></a>
+        <ul id="menu">
+            <li><a href="index.html">главная</a></li>
+            <li><a href="company.html">о нас</a></li>
+            <li><a href="new.html">новости</a></li>
+            <li><a href="catalog.html">продукция</a></li>
+        </ul>
+    
+    <!--search-->
+        <img class="snail" src="images/whitesnail.png" alt="">
+        <form role="search" id="form">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
+      
+    </header>
+    <main class="" >
+        <h1>Blizzard поделилась подробностями проведения следующей «беты» Overwatch 2 — в России игру попробовать не дадут</h1>
+        <p style="opacity: 0.5;">17.05.2022</p>
+        <p>Издатель и разработчик Blizzard Entertainment в заметке на своём официальном сайте поделился дополнительными подробностями проведения следующего этапа закрытого бета-тестирования командного шутера Overwatch 2.</p>
+        <img src="images/n6.jpg" alt="">
+        <p>Испытания Overwatch 2 начнутся 28 июня в 21:00 по Москве и продлятся до 18 июля. Игру дадут попробовать на PC (Battle.net), PS4, PS5, Xbox One, Xbox Series X и S во всех регионах, кроме Китая, России и Белоруссии.
+            Участвовавшие в прошлой фазе «беты» пользователи доступ к следующей просто так не получат (надо<a class="ss" href="https://playoverwatch.com/ru-ru/beta/#showcase-optin"> подавать заявку </a>заново). Покупателей же набора Watchpoint Pack впустят в тестирование автоматически.</p>
+        <img src="images/over.jpg" alt="">
+        <p>Что касается наполнения, то в «бете» будет доступен формат «5 на 5», два новых героя (Соджорн, Королева Стервятников), режим «Натиск» и пять карт (Нью-Йорк, Торонто, Рим, Монте-Карло и Рио).
+            Ранний доступ и первый сезон Overwatch 2 стартуют 4 октября на PC (Battle.net), PS4, PS5, Xbox One, Xbox Series X и S, а также Nintendo Switch. Игра будет условно-бесплатной — авторы обещают непрерывное развитие и постоянную поддержку.</p>
+        <div class="perekl">
+        <a href="new5.html">&#9668; Будущее</a>
+        <a href="" style="opacity: 0.2;">Прошлое &#9658;</a></div>
+    </main>
+    <img class="cap2" src="images/carapina2.png" alt=""> 
+    <footer>
+        <a class="hlogo"href="index.html"><img src="images/logo.png" alt="логотип"></a> 
+        <img src="images/whitesnail.png" alt="">
+        <ul id="menu2">
+            <li><a href="podbor.html">ПОДБОРКИ</a></li>     
+            <li><a href="new.html">НОВОСТИ</a></li> 
+            <li><a href="company.html">О КОМПАНИИ</a></li> 
+            <li><a href="company.html#contact">КОНТАКТЫ</a></li> 
+        </ul>
+        <ul id="menu3">
+            <li><a href=""><img src="images/vk.png" alt=""></a></li> 
+            <li><a href="https://t.me/tatiankes"><img src="images/tg.png" alt=""></a></li> 
+            <li><a href="https://discord.gg/AAqrSNf8MP"><img src="images/dis.png" alt=""></a></li>
+        </ul>
+        <img class="cap" src="images/carapina.png" alt="">     
+    </footer>
+    <img ID = "toTop"  src="images/up.png" alt="">
+</body>
+</html>
